@@ -1,0 +1,132 @@
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background: #f5f7fb;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+header {
+  background: #a71d31; 
+  color: white;
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+header h1 {
+  margin: 0;
+  text-align: center;
+  font-size: 32px;
+}
+
+header .highlight {
+  color: #ffd700; 
+  animation: pulse 2s ease-in-out infinite; 
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+nav {
+  text-align: center;
+  margin-top: 10px;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: #ffd700;
+}
+
+.hero {
+  background: linear-gradient(to right, #a71d31, #ff4040);
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+  min-height: 16vh;
+}
+
+.hero h2 {
+  font-size: 36px;
+}
+
+.hero p {
+  font-size: 18px;
+}
+
+.balastan {
+  width: 300px;
+}
+
+.section {
+  padding: 50px 20px;
+  min-height: 20vh;
+}
+
+.section.gray {
+  background-color: #eef1f7;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.program-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.program-card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+}
+
+.program-card:hover {
+  box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+.schedule-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.schedule-table th,
+.schedule-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+.schedule-table th {
+  background-color: #a71d31;
+  color: white;
+}
+
+footer {
+  text-align: center;
+  background: #a71d31;
+  color: white;
+  width: 100%;
+}
